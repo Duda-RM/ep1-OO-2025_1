@@ -51,6 +51,14 @@ public class Aluno extends Pessoa {
 			
 		}
 		
+		public double getFrequencia() {
+		    return frequencia;
+		}
+
+		public void setFrequencia(double frequencia) {
+		    this.frequencia = frequencia;
+		}
+		
 		@Override
 		public String toString() {
 			return super.toString()+
