@@ -31,7 +31,7 @@ public class AlunoEspecial extends Aluno {
 
     @Override
     public double calcularMedia() {
-        return 0.0;
+        return 0.0; // média sempre 0 para aluno especial
     }
 
     @Override
