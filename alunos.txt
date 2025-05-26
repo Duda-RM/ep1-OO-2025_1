@@ -1,0 +1,3 @@
+duda,07980259130,duda@gmail.com,MAT9130001,engenharia,0.0,normal
+rafa,00826707149,rafa@gmail.com,MAT7149002,engenharia ,0.0,especial
+duda,07980259120,duda@gmail.com,MAT9120003,engenharia,0.0,normal
