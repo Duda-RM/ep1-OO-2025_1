@@ -9,32 +9,47 @@ O enunciado do trabalho pode ser encontrado aqui:
 
 ## Dados do Aluno
 
-- **Nome completo:** [Preencher aqui]
-- **Matrícula:** [Preencher aqui]
-- **Curso:** [Preencher aqui]
-- **Turma:** [Preencher aqui]
+- **Nome completo:** [Maria Eduarda Rodrigues Morias]
+- **Matrícula:** [232021928]
+- **Curso:** [Engenharia de Software]
+- **Turma:** [T06]
 
 ---
 
 ## Instruções para Compilação e Execução
 
 1. **Compilação:**  
-   [Descrever aqui como compilar o projeto. Exemplo: `javac Main.java` ou o script usado]
+  javac sistema/*.java
+
 
 2. **Execução:**  
-   [Descrever aqui como executar o projeto. Exemplo: `java Main` ou o script usado]
+  java sistema.Main
+
 
 3. **Estrutura de Pastas:**  
-   [Descrever aqui as principais pastas do projeto]
+   /sistema
+  ├── Aluno.java
+  ├── AlunoEspecial.java
+  ├── AlunoManager.java
+  ├── Disciplina.java
+  ├── MenuAluno.java
+  ├── MenuAvaliacao.java
+  ├── MenuDisciplinaTurma.java
+  ├── MenuMatricula.java
+  ├── Pessoa.java
+  ├── Turma.java
+  └── Main.java
+alunos.txt  (arquivo de dados de alunos)
+
 
 3. **Versão do JAVA utilizada:**  
-   [Descrever aqui como versão do JAVA utilizada no projeto. Sugestão: `java 21`]
+ java 21
 
 ---
 
 ## Vídeo de Demonstração
 
-- [Inserir o link para o vídeo no YouTube/Drive aqui]
+- (https://drive.google.com/drive/folders/1sfh9d01vf3E80BnfMJakSog-JIE6ve1s?usp=sharing)
 
 ---
 
@@ -53,24 +68,31 @@ O enunciado do trabalho pode ser encontrado aqui:
 
 ## Principais Funcionalidades Implementadas
 
-- [ ] Cadastro, listagem, matrícula e trancamento de alunos (Normais e Especiais)
-- [ ] Cadastro de disciplinas e criação de turmas (presenciais e remotas)
-- [ ] Matrícula de alunos em turmas, respeitando vagas e pré-requisitos
-- [ ] Lançamento de notas e controle de presença
-- [ ] Cálculo de média final e verificação de aprovação/reprovação
-- [ ] Relatórios de desempenho acadêmico por aluno, turma e disciplina
-- [ ] Persistência de dados em arquivos (.txt ou .csv)
-- [ ] Tratamento de duplicidade de matrículas
-- [ ] Uso de herança, polimorfismo e encapsulamento
+✅ Cadastro, listagem, matrícula e trancamento de alunos (Normais e Especiais)
+
+✅ Cadastro de disciplinas e criação de turmas (presenciais e remotas)
+
+✅ Matrícula de alunos em turmas, respeitando vagas e pré-requisitos
+
+✅ Lançamento de notas e controle de presença
+
+✅ Cálculo de média final e verificação de aprovação/reprovação
+
+✅ Relatórios de desempenho acadêmico por aluno, turma e disciplina
+
+✅ Persistência de dados em arquivos (.txt ou .csv)
+
+✅ Tratamento de duplicidade de matrículas
+
+✅ Uso de herança, polimorfismo e encapsulamento
 
 ---
 
 ## Observações (Extras ou Dificuldades)
 
-- [Espaço para o aluno comentar qualquer funcionalidade extra que implementou, dificuldades enfrentadas, ou considerações importantes.]
-
+Implementei a geração automática de matrícula para novos alunos, utilizando parte do CPF do aluno para facilitar a identificação e evitar duplicidade.
 ---
 
 ## Contato
 
-- [Opcional: E-mail pessoal do aluno.]
+- eduardarodrigues26110412@gmail.com
