@@ -25,7 +25,7 @@ public class MenuAluno {
             System.out.println("0. Sair");
             System.out.print("Escolha uma opção: ");
             opcao = sc.nextInt();
-            sc.nextLine(); // limpa buffer
+            sc.nextLine();
 
             switch (opcao) {
                 case 1 -> cadastrarAluno(false);
@@ -46,10 +46,11 @@ public class MenuAluno {
         String cpf = sc.nextLine();
         System.out.print("Email: ");
         String email = sc.nextLine();
-        System.out.print("Matrícula: ");
-        String matricula = sc.nextLine();
         System.out.print("Curso: ");
         String curso = sc.nextLine();
+
+        // Matrícula automática
+        String matricula = alunoManager.gerarMatriculaComCpf(cpf);
 
         if (especial) {
             AlunoEspecial aluno = new AlunoEspecial(nome, cpf, email, matricula, curso);
@@ -58,5 +59,7 @@ public class MenuAluno {
             Aluno aluno = new Aluno(nome, cpf, email, matricula, curso);
             alunoManager.adicionarAluno(aluno);
         }
+
+        System.out.println("Matrícula gerada automaticamente: " + matricula);
     }
 }

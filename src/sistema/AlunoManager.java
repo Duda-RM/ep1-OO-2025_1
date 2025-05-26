@@ -83,4 +83,25 @@ public class AlunoManager {
             System.out.println("Erro ao carregar alunos: " + e.getMessage());
         }
     }
+
+    public ArrayList<Aluno> getAlunos() {
+        return alunos;
+    }
+    
+    private int proximaMatricula = 1;
+
+    public String gerarMatriculaComCpf(String cpf) {
+        // Remove pontos e traços do CPF
+        String cpfNumeros = cpf.replaceAll("\\D", ""); // remove tudo que não é número
+
+        // Pega os últimos 4 dígitos
+        String ultimos4 = cpfNumeros.substring(cpfNumeros.length() - 4);
+
+        // Gera matrícula: MAT + últimos dígitos + contador sequencial formatado (ex.: 001)
+        String matricula = "MAT" + ultimos4 + String.format("%03d", proximaMatricula);
+        proximaMatricula++;
+        return matricula;
+    }
+
+
 }
